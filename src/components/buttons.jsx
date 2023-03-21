@@ -17,9 +17,10 @@ const getClassName = (value) => {
 // Buttons component
 const Buttons = (props) => {
   const { value } = props;
+  const { setResult } = props;
 
   return (
-    <button type="button" className={`${getClassName(value)} button`}>
+    <button type="button" className={`${getClassName(value)} button`} onClick={(e) => setResult(e)}>
       { value }
     </button>
   );
@@ -27,6 +28,7 @@ const Buttons = (props) => {
 
 Buttons.propTypes = {
   value: PropTypes.string.isRequired,
+  setResult: PropTypes.func.isRequired,
 };
 
 export default Buttons;
