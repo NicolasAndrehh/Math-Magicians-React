@@ -1,0 +1,16 @@
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 30rem;
+    text-align: center;
+
+    .quote, .author {
+        text-align: left;
+    }
+
+    .error-message {
+        color: #ff0000;
+        font-weight: bold;
+    }
+}
