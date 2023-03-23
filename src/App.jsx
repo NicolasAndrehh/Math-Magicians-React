@@ -16,9 +16,9 @@ const App = () => (
 
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/calculator" element={<Calculator />} />
-        <Route path="/quote" element={<Quote />} />
+        <Route path="/Math-Magicians-React/" element={<Home />} />
+        <Route path="/Math-Magicians-React/calculator" element={<Calculator />} />
+        <Route path="/Math-Magicians-React/quote" element={<Quote />} />
       </Routes>
     </BrowserRouter>
   </>

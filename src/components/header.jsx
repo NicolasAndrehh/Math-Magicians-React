@@ -7,13 +7,13 @@ const Header = () => (
     <nav>
       <ul className="nav-links">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/Math-Magicians-React/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/calculator">Calculator</NavLink>
+          <NavLink to="/Math-Magicians-React/calculator">Calculator</NavLink>
         </li>
         <li>
-          <NavLink to="/quote">Quote</NavLink>
+          <NavLink to="/Math-Magicians-React/quote">Quote</NavLink>
         </li>
       </ul>
     </nav>
