@@ -33,38 +33,38 @@ const Quote = () => {
   // Render if there's an error
   if (error) {
     return (
-      <div className="quote-container">
-        <h3>Random Quote</h3>
+      <section className="quote-section">
+        <h2>Random Quote</h2>
         <p className="error-message">* Sorry, we have an error loading the quote, please reload the page to try again *</p>
-      </div>
+      </section>
     );
   }
 
   // Render if the the API is fetching
   if (loading) {
     return (
-      <div className="quote-container">
-        <h3>Random Quote</h3>
+      <section className="quote-section">
+        <h2>Random Quote</h2>
         <p className="loading">Loading...</p>
-      </div>
+      </section>
     );
   }
 
   // Render when the API was fetched correctly
   return (
-    <div className="quote-container">
-      <h3>Random Quote</h3>
+    <section className="quote-section">
+      <h2>Random Quote</h2>
       <p className="quote">
-        &quot;
+        <span className="quotes">&quot;</span>
         {data[0].quote}
-        &quot;
+        <span className="quotes">&quot;</span>
       </p>
       <p className="author">
-        -
+        <span className="dash">-</span>
         {' '}
         {data[0].author}
       </p>
-    </div>
+    </section>
   );
 };
 
